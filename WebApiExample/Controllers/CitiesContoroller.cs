@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApiExample.Controllers
 {
@@ -8,6 +9,7 @@ namespace WebApiExample.Controllers
 
 	public class CitiesContoroller:ControllerBase
 	{
+		
 		[HttpGet("list")]
 		public JsonResult getList()
 		{

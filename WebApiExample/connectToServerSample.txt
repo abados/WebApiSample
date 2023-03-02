@@ -1,0 +1,14 @@
+
+  const connectToServer = () => {
+    axios
+      .get(`http://localhost:5140/api/cities/list`)
+      .then((response) => {
+        // handle success
+        console.log(response.data);
+        setResult(response.data);
+      })
+      .catch((error) => {
+        // handle error
+        console.log(error);
+      });
+  };
